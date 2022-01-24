@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div class="container">
          <div class ="navbar">
-            <img src="https://images.vexels.com/media/users/3/167024/isolated/preview/cb2ad965aa4c8b6115c8b1fac49c28fc-alzheimers-awareness-ribbon-badge-sticker.png" class="logo"/>
+            <img src="" class="logo"/>
             <nav>
                 <ul>
                     <li><a href = "home.js" >HOOME</a></li>
