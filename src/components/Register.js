@@ -18,10 +18,10 @@ export default function Login(){
           <div>
             <label htmlFor="password">Password</label>
             <input className="form-control" type="password" name="password" />
-          </div>
+          </div> 
           
           <div class="d-grid gap-2">
-            <button className="btn btn-block btn-primary" type="button">Button</button>
+            <button className="btn btn-block btn-primary" type="button">Register</button>
           </div>
         </form>
         </div>
