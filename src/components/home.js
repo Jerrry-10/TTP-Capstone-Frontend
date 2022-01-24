@@ -3,8 +3,49 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <div> 
-            <h1>HealthyFriend</h1>   
+        <div class="container">
+         <div class ="navbar">
+            <img src="https://images.vexels.com/media/users/3/167024/isolated/preview/cb2ad965aa4c8b6115c8b1fac49c28fc-alzheimers-awareness-ribbon-badge-sticker.png" class="logo"/>
+            <nav>
+                <ul>
+                    <li><a href = "home.js" >HOOME</a></li>
+                    <li><a href = "login.js" >LOGIN</a></li>
+                    <li><a href = "information.js" >YOUR INFO</a></li>
+                    <li><a href = "userprofile.js" >YOUR PROFILE</a></li>
+                    <li><a href = "navbar.js" >NAVBAR?</a></li>
+                </ul>
+
+            </nav>
         </div>
+
+        <div class="row">
+            <div class="col">
+                <h1> not sure </h1>
+                <h2> not sure </h2>
+
+            </div>
+
+            <div class="col">
+                <div class="card card1">
+                    <h5>card here</h5>
+                  
+                </div>
+                <div class="card card2">
+                    <h5>card here</h5>
+                    
+                </div>
+                <div class="card card3">
+                    <h5>card here</h5>
+                   
+                </div>
+                <div class="card card4">
+                    <h5> </h5>
+                    
+                </div>
+            </div>
+
+
+        </div>
+      </div>
     )
 }
