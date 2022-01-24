@@ -1,22 +1,11 @@
 import React from 'react'
-// comment
+import Navbar from './navbar'
+
 
 export default function Home() {
     return (
         <div class="container">
-         <div class ="navbar">
-            <img src="" class="logo"/>
-            <nav>
-                <ul>
-                    <li><a href = "home.js" >HOOME</a></li>
-                    <li><a href = "login.js" >LOGIN</a></li>
-                    <li><a href = "information.js" >YOUR INFO</a></li>
-                    <li><a href = "userprofile.js" >YOUR PROFILE</a></li>
-                    <li><a href = "navbar.js" >NAVBAR?</a></li>
-                </ul>
-
-            </nav>
-        </div>
+         
 
         <div class="row">
             <div class="col">
