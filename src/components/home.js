@@ -7,7 +7,9 @@ import Goals from './goals'
 
 
 export default function Home() {
+    const redirect = useNavigate()
     return (
+        
         <div class="container">
          <img src="" class="logo"/>
    
@@ -19,10 +21,11 @@ export default function Home() {
                    --- Log In to the Left --- </h2>
                     </div>
 
-
-
-
-                    
+         <div className="d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-info m-1" onClick={ () => {
+                    redirect("/login")
+                }}>Make an Account Here!</button>
+            </div>
 
         <div class="row">
             <div class="col">
