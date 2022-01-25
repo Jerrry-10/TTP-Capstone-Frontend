@@ -1,12 +1,19 @@
-import React from 'react'
-import Login from './login'
 
+import React from 'react';
 
-export default function Home() {
+// import Navbar from './navbar';
+import Login from './login';
+
+function Home () {
+   //  const ButtonGroup = styled.div;
+// Usage
     return (
-        <div> 
-            <h1>HealthyFriend</h1>   
-            <Login/>
-        </div>
-    )
+
+
+  <button onClick={Login}> Log In </button>
+
+    );
 }
+
+export default Home;
+

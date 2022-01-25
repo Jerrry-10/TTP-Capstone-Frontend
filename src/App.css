@@ -12,6 +12,18 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(28, 28, 133);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
 .navbar {
   list-style-type: none;
   margin: 0;
