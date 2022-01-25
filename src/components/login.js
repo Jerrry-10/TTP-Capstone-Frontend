@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom'
 export default function Login(){
     return(
         <div>
@@ -15,6 +16,7 @@ export default function Login(){
             <button className="btn btn-block btn-primary" type="button">Button</button>
           </div>
         </form>
+        <span> Don't have an account? <Link to = "/Register" > Register here!</Link></span>
         </div>
     )
 }
