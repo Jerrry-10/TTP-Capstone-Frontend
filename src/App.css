@@ -23,7 +23,12 @@
 .NavText {
   float: left;
 }
-
+.new-line {
+  white-space: pre-line;
+}
+.divdown{
+  display: inline-block;
+}
 li a {
   display: inline-block;
   color: white;
