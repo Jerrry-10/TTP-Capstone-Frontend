@@ -2,27 +2,24 @@ import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css';
 import Home from './components/home';
-import Login from './components/login'
+import Login from './components/login';
 import Navbar from './components/navbar';
-
-function App() 
-{
+import Register from './components/Register'
+function App() {
   return (
+    <BrowserRouter>
+     <Navbar/>
+     <div>
+     
+       <Routes> 
+         <Route exact path = "/" element =  {<Home/> }   /> 
+         <Route exact path = "/Register" element =  {<Register/> }   /> 
+         <Route exact path = "/Login" element = {<Login/>} />
+       </Routes>
+     </div>
 
-    <div className = "App">
-      <Navbar />
-      <Route exact path= "/" component={<Home></Home>} />
-      <Route exact path= "/login" component={<Login></Login>} />
-    
-    
-    <div class="row">
-            <div class="col">
-                <h1> Healthy Friend </h1>
-                <h2> Click the button to log in/register. </h2>
-                    </div>
-            </div>
- </div>
-
+   </BrowserRouter>
   );
 }
+
 export default App;
