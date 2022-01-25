@@ -1,6 +1,6 @@
 import React from 'react';
 
-function goals () {
+function Goals () {
     return (
         <div>
             <h1>Hello</h1>
@@ -8,4 +8,4 @@ function goals () {
     );
 }
 
-export default goals;
+export default Goals;

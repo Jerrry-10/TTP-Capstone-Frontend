@@ -1,6 +1,6 @@
 import React from 'react';
 
-function userprofile () {
+function Userprofile () {
     return (
         <div>
             <h1>Hello</h1>
@@ -8,4 +8,4 @@ function userprofile () {
     );
 }
 
-export default userprofile;
+export default Userprofile;

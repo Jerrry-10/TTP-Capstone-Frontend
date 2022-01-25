@@ -1,13 +1,17 @@
 import React from 'react';
-import Navbar from './navbar';
+
+// import Navbar from './navbar';
 import Login from './login';
 
-function home () {
+function Home () {
+   //  const ButtonGroup = styled.div;
+// Usage
+
     return (
-        <div>
-            <h1>Hello</h1>
-        </div>
+
+  <button onClick={Login}> Log In </button>
+
     );
 }
 
-export default home;
+export default Home;
