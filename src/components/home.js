@@ -6,7 +6,7 @@ import Register from './Register'
 
 function Home () {
  
-    return (
+ return (
   <div>
 
   <h1> Healthy Friend ™ </h1>
