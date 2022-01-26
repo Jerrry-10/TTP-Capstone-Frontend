@@ -45,9 +45,12 @@ function Goals () {
                 <option>3 miles</option>
             </select>
             </div>
-            <button> onSubmit</button>
+            <button > Submit</button>
         </form>
-        <div id = 'sscuess'></div>
+        <div id = 'sscuess'
+        
+        >
+        </div>
         </>
     );
 }

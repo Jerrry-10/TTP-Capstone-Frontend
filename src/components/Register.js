@@ -5,19 +5,19 @@ export default function Login(){
         <form className='container'>
           <div>
             <label htmlFor="FirstName">First Name</label>
-            <input className="form-control" type="text" name="FirstName"   />
+            <input className="form-control" type="text" name="FirstName"  placeholder='Enter your first name...' />
           </div>
           <div>
             <label htmlFor="Lastname">Last name</label>
-            <input className="form-control" type="text" name="Lastname" />
+            <input className="form-control" type="text" name="Lastname" placeholder='Enter your last name...'/>
           </div>
           <div>
-            <label htmlFor="email">email</label>
-            <input className="form-control" type="email" name="email" />
+            <label htmlFor="email">Email</label>
+            <input className="form-control" type="email" name="email" placeholder='Enter the email you want to associate with this account...'/>
           </div>
           <div>
             <label htmlFor="password">Password</label>
-            <input className="form-control" type="password" name="password" />
+            <input className="form-control" type="password" name="password" placeholder='Enter a password...'/>
           </div> 
           
           <div class="d-grid gap-2">

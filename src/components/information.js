@@ -23,7 +23,7 @@ const information = () => {
          <br />
          <br />
          <h3>Vaccine Sites:</h3>
-         <p className="column2">To protect you and people around you from COVID-19, Please consider to get vacinated if possible.</p>
+         <p className="column2">To protect you and people around you from COVID-19, consider getting vaccinated if possible.</p>
          <form action='https://www.vaccines.gov/search/'>
          <button className="column1 button" type='submit'>Find Vaccine Site</button>
          </form>

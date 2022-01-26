@@ -15,6 +15,11 @@ function Userprofile () {
         }
     }
 
+    const current = new Date();
+    const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+
+
+
 
     return (
 <div>
@@ -34,10 +39,15 @@ function Userprofile () {
   <li class="nav-item">
     <a class="nav-link" href="/nutrition">Nutritional Goals</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link disabled"></a>
-  </li>
+
+  
+   <li class="nav-item">
+
+    <a class="nav-link disabled">Current date is {date}</a>
+  </li> 
+
 </ul>
+
   </div>
   <div class="card-body">
     <h5 class="card-title">This is your User Profile!</h5>
