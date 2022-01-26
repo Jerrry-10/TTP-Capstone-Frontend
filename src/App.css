@@ -36,6 +36,10 @@
   float: left;
 }
 
+.card-header {
+  background: #792626;
+}
+
 li a {
   display: inline-block;
   color: white;
@@ -44,7 +48,7 @@ li a {
   text-decoration: none;
 }
 .App-header {
-  background-color: #282c34;
+  background-color: #792626;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
