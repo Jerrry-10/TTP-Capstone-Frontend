@@ -1,35 +1,70 @@
 import React, {useState} from 'react'
-export default function Login(){
+import { Redirect, Link } from "react-router-dom"
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+
+export default function Register(){
+  const [fn,setfn] = useState("")
+  const [ln,setln] = useState("")
+  const [pw,setpw] = useState("")
+  const [e,sete] = useState("")
+  const [dob,setdob] = useState("")
+ // const [show, setshow] = useState(false)
+  const Signup = async a =>{
+    alert("signed up")
+    a.preventDefault()
+    // console.log("before " + show)
+    // setshow(true)
+    // console.log("after " + show)
+    try{
+        const body = {fn,ln,e,pw}
+        
+        const response = await fetch("http://localhost:5001/signup", {
+            method:"POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(body)
+        })
+      //  document.getElementById('complate').innerText = `Your signup was added to the database Please head to `
+        window.location = "/login"
+      // if(ln !== "" || ln.length > 0){
+      //   setshow(true)
+      // }
+     
+    }catch(err){
+        console.error(err.messenge)
+    }
+}
     return(
         <div>
-        <form className='container'>
+        <form className='container' onSubmit={Signup}>
           <div>
             <label htmlFor="FirstName">First Name</label>
-            <input className="form-control" type="text" name="FirstName"  placeholder='Enter your first name...' />
+            <input className="form-control" type="text" name="FirstName" onChange={a => setfn(a.target.value) placeholder='Enter your first name...' />
           </div>
           <div>
             <label htmlFor="Lastname">Last name</label>
-            <input className="form-control" type="text" name="Lastname" placeholder='Enter your last name...'/>
+            <input className="form-control" type="text" name="Lastname" onChange={a => setln(a.target.value) placeholder='Enter your last name...'/>
           </div>
           <div>
             <label htmlFor="email">Email</label>
-            <input className="form-control" type="email" name="email" placeholder='Enter the email you want to associate with this account...'/>
+            <input className="form-control" type="email" name="email" onChange={a => sete(a.target.value) placeholder='Enter the email you want to associate with this account...'/>
           </div>
           <div>
             <label htmlFor="password">Password</label>
-            <input className="form-control" type="password" name="password" placeholder='Enter a password...'/>
+            <input className="form-control" type="password" name="password" onChange={a => setpw(a.target.value) placeholder='Enter a password...'/>
+
           </div> 
           
-          <div class="d-grid gap-2">
-            <button className="btn btn-block btn-primary" type="button">Register</button>
+          <div className="d-grid gap-2">
+            <button className="btn btn-block btn-primary" >Register</button>
           </div>
         </form>
+        <div id = 'complate'></div>
         </div>
     )
 }
 
 // FROM BOOTSTRAP: MIGHT HELP LATER
-
+//{show == false ? null : <div><Link to = "/login" className="NavText"> Login</Link></div>}
 {/* <form class="row g-3">
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label">Email</label>

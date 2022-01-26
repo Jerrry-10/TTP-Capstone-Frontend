@@ -7,7 +7,14 @@ import Register from './Register'
 
 function Home () {
  
-    return (
+const link = () =>{
+  return(
+    <a href='/login'></a>
+  
+  )
+}
+
+ return (
   <div>
 <h1 class="text-center">Healthy Friend ™</h1>
 <h2 class="text-center"> The site that will help you balance your life goals, health goals, fitness, and sleep goals!</h2>
@@ -17,6 +24,12 @@ function Home () {
   <button class="btn btn-outline-warning" onClick={Register}> <Link to = "/Register" className="NavText"> <input value="Make a New Account Here!"type = 'submit'/>  </Link> </button>
   </div>
   
+
+
+  <h1> Healthy Friend ™ </h1>
+  <Link to = "/login" className="NavText"> <input value="twa"type = 'submit'/>  </Link> 
+  
+
 
 
   </div>
