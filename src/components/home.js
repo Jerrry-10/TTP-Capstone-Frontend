@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Login from './login';
 import Register from './Register'
 
+
 function Home () {
  
 const link = () =>{
@@ -15,10 +16,20 @@ const link = () =>{
 
  return (
   <div>
+<h1 class="text-center">Healthy Friend ™</h1>
+<h2 class="text-center"> The site that will help you balance your life goals, health goals, fitness, and sleep goals!</h2>
+<h2 class="text-center"> Log in or Register to have your own Healthy Friend with you on your journey!</h2>
+<div class="d-grid gap-2 col-3 mx-auto">
+  <button class="btn btn-outline-success" onClick={Login}> <Link to = "/login" className="NavText" > <input value="Log In"type = 'submit'/>  </Link> </button>
+  <button class="btn btn-outline-warning" onClick={Register}> <Link to = "/Register" className="NavText"> <input value="Make a New Account Here!"type = 'submit'/>  </Link> </button>
+  </div>
+  
+
 
   <h1> Healthy Friend ™ </h1>
   <Link to = "/login" className="NavText"> <input value="twa"type = 'submit'/>  </Link> 
   
+
 
 
   </div>

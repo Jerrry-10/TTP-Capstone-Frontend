@@ -26,13 +26,14 @@ export default function Login(){
         <div>
         <form className='container' onSubmit={Log}>
           <div>
-            <label htmlFor="userName"> email</label>
-            <input className="form-control" type="text" name="userName" onChange={a => setemail(a.target.value)}   />
+            <label htmlFor="userName">User Name</label>
+            <input className="form-control" type="text" name="userName" onChange={a => setemail(a.target.value) placeholder='Enter your username here...'  />
           </div>
           <div>
           <hr></hr>
             <label htmlFor="password">Password</label>
-            <input className="form-control" type="password" name="password" onChange={a => setpass(a.target.value)} />
+            <input className="form-control" type="password" name="password" onChange={a => setpass(a.target.value) placeholder='Enter your password here...'/>
+
           </div>
           <div class="d-grid gap-2">
             <button className="btn btn-block btn-primary">Button</button>

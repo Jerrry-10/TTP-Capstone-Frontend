@@ -38,19 +38,20 @@ export default function Register(){
         <form className='container' onSubmit={Signup}>
           <div>
             <label htmlFor="FirstName">First Name</label>
-            <input className="form-control" type="text" name="FirstName" onChange={a => setfn(a.target.value)}  />
+            <input className="form-control" type="text" name="FirstName" onChange={a => setfn(a.target.value) placeholder='Enter your first name...' />
           </div>
           <div>
             <label htmlFor="Lastname">Last name</label>
-            <input className="form-control" type="text" name="Lastname" onChange={a => setln(a.target.value)}/>
+            <input className="form-control" type="text" name="Lastname" onChange={a => setln(a.target.value) placeholder='Enter your last name...'/>
           </div>
           <div>
-            <label htmlFor="email">email</label>
-            <input className="form-control" type="email" name="email" onChange={a => sete(a.target.value)}/>
+            <label htmlFor="email">Email</label>
+            <input className="form-control" type="email" name="email" onChange={a => sete(a.target.value) placeholder='Enter the email you want to associate with this account...'/>
           </div>
           <div>
             <label htmlFor="password">Password</label>
-            <input className="form-control" type="password" name="password" onChange={a => setpw(a.target.value)}/>
+            <input className="form-control" type="password" name="password" onChange={a => setpw(a.target.value) placeholder='Enter a password...'/>
+
           </div> 
           
           <div className="d-grid gap-2">
