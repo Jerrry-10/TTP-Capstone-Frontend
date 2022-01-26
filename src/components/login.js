@@ -9,6 +9,7 @@ export default function Login(){
             <input className="form-control" type="text" name="userName"   />
           </div>
           <div>
+          <hr></hr>
             <label htmlFor="password">Password</label>
             <input className="form-control" type="password" name="password" />
           </div>
