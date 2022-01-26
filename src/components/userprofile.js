@@ -7,7 +7,7 @@ function Userprofile () {
 
     const getLists = async () =>{
         try{
-            const response = await fetch("http://localhost:5000/sleep")
+            const response = await fetch("http://localhost:5000")
             const jsonData = await response.json()
             setLists(jsonData)
         }catch(err){

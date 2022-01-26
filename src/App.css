@@ -12,6 +12,18 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+/* .container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(86, 86, 95);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+} */
+
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -23,12 +35,13 @@
 .NavText {
   float: left;
 }
-.new-line {
-  white-space: pre-line;
+
+
+.card-header {
+  background: #792626;
 }
-.divdown{
-  display: inline-block;
-}
+
+
 li a {
   display: inline-block;
   color: white;
@@ -37,7 +50,7 @@ li a {
   text-decoration: none;
 }
 .App-header {
-  background-color: #282c34;
+  background-color: #792626;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -58,4 +71,44 @@ li a {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* information page */
+
+h3 {
+  padding: 10px;
+  border: 2px solid green;
+  font-size: 20px;
+}
+p {
+  font-size: 18px;
+  margin: 2px 2px;
+}
+.a {
+  list-style-type: square;
+  font-size: 18px;
+}
+.button {
+  background-color: white;
+  color: rgb(33, 75, 212);
+  border: pink;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #00ba28;
+  color: white;
+}
+
+.column2 {
+  float: left;
+  width: 40%;
+}
+.column1 {
+  float: right;
+  width: 40%;
 }

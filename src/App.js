@@ -10,6 +10,8 @@ import Userprofile from './components/userprofile';
 import Sleep from './components/sleep';
 import Fitness from './components/fitness';
 import Nutrition from './components/nutrition';
+import Information from './components/information';
+
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +27,8 @@ function App() {
          <Route exact path = "/Sleep" element = {<Sleep/>} />
          <Route exact path = "/Fitness" element = {<Fitness/>} />
          <Route exact path = "/Nutrition" element = {<Nutrition/>} />
+         <Route exact path = "/Information" element = {<Information/>} />
+
          
        </Routes>
      </div>
