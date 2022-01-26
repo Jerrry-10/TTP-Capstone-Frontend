@@ -35,7 +35,7 @@ function Userprofile () {
     <a class="nav-link" href="/nutrition">Nutritional Goals</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled">Will display time and date</a>
+    <a class="nav-link disabled"></a>
   </li>
 </ul>
   </div>
