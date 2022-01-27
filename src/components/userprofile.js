@@ -1,5 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
+import InputTodo from './InputTodos';
+import ListTodos from './ListTodos';
 
 
 function Userprofile () {
@@ -55,6 +57,8 @@ function Userprofile () {
     {/* <a href="#" class="btn btn-primary">Go to my fitness goals!</a> */}
   </div>
 </div>
+ <InputTodo/>
+ <ListTodos/>
 </div>
 
   )};

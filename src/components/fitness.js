@@ -46,7 +46,14 @@ export default function Fitness () {
     </div>
     { Fitnessd.map(e=>{
      return(
-       <div>{e.nutrition} </div>
+       <div class="card">
+  <img src="..." class="card-img-top" alt="..."/>
+  <div class="card-body">
+    <h5 class="card-title">I want to sleep for</h5>
+    <p class="card-text">{e.exercise}</p>
+
+  </div>
+</div>
      )
    }) }
     </div>
