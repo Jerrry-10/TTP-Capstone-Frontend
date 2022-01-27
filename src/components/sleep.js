@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 
- 
+const current = new Date();
+const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
 class Sleep extends Component {
   render() {
     return (
         <div>
         <div class="card text-center">
         <div class="card-header">
-            
         <ul class="nav nav-pills nav-fill">
+
       <li class="nav-item">
         <a class="nav-link" href="/userprofile">User Profile - Your Information</a>
       </li>
@@ -22,9 +23,10 @@ class Sleep extends Component {
         <a class="nav-link" href="/nutrition">Nutritional Goals</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled">Will display time and date</a>
+      <a class="nav-link disabled">Current date is {date}</a>
       </li>
     </ul>
+
       </div>
       <div class="card-body">
         <h5 class="card-title">These are your sleep goals!</h5>
@@ -32,6 +34,7 @@ class Sleep extends Component {
         {/* <a href="#" class="btn btn-primary">Go to my fitness goals!</a> */}
       </div>
     </div>
+
     </div>
     );
   }

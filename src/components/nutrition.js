@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 class Nutrition extends Component {
   render() {
+    const current = new Date();
+    const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
     return (
         <div>
         <div class="card text-center">
@@ -21,7 +23,7 @@ class Nutrition extends Component {
       <a class="nav-link active" aria-current="page" href="/nutrition">Nutrition Goals</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled">Will display time and date</a>
+      <a class="nav-link disabled">Current date is {date}</a>
       </li>
     </ul>
       </div>
