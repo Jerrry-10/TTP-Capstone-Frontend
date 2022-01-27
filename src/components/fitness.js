@@ -46,7 +46,7 @@ export default function Fitness () {
     </div>
     { Fitnessd.map(e=>{
      return(
-       <div>{e.fitness} </div>
+       <div>{e.nutrition} </div>
      )
    }) }
     </div>

@@ -1,8 +1,20 @@
-import React, { Component } from 'react';
-
+import React, { Component, useState,useEffect } from 'react';
+import axios from 'axios';
  
-class Sleep extends Component {
-  render() {
+export default function Fitness () {
+  
+  const [Fitnessd,setFitnessd] = useState([])
+  const getFitdata = async () =>{
+    await axios.get(`http://localhost:5001/goals/`).then(response => {
+      setFitnessd(response.data)
+      console.log(response.data)
+    })
+    
+
+  }
+  useEffect(() => {
+    getFitdata()
+  }, []);
     return (
         <div>
         <div class="card text-center">
@@ -32,9 +44,13 @@ class Sleep extends Component {
         {/* <a href="#" class="btn btn-primary">Go to my fitness goals!</a> */}
       </div>
     </div>
+    { Fitnessd.map(e=>{
+     return(
+       <div>{e.fitness} </div>
+     )
+   }) }
     </div>
     );
   }
-}
+
  
-export default Sleep;
