@@ -36,7 +36,7 @@ export default function Login(){
 
           </div>
           <div class="d-grid gap-2">
-            <button className="btn btn-block btn-primary">Button</button>
+            <button className="btn btn-block btn-primary">Login</button>
           </div>
         </form>
         <span> Don't have an account? <Link to = "/Register" > Register here!</Link></span>

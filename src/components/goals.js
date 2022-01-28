@@ -21,14 +21,16 @@ function Goals () {
 
     return (
         <>
-        <h1 className="test-center mt-5"> Add new goals</h1>
-        <form className="d-flex mt-5" onSubmit={onSubmit} >
+       <div className='goal'> 
+        <h1 className="text-center mt-5"> Add new goals</h1>
+        <form className="d-flex mt-5 justify-content-center" onSubmit={onSubmit} >
             <label for ='sleep'>I want to sleep for </label>
             <select name='sleep' onChange={e => SetFitness(e.target.value)}>
                 <option>7 hours</option>
                 <option>8 hours</option>
                 <option>9 hours</option>
             </select>
+            <div className='colum'> 
             <div className='new-line divdown'>
             <label for ='eat'> I want to eat </label>
             <select name='eat' onChange={e => SetNutrition(e.target.value)}>
@@ -36,7 +38,7 @@ function Goals () {
                 <option>2500 calories</option>
                 <option>2600 calories</option>
             </select>
-            
+            </div>
             
             <label for ='run'>I want to run for </label>
             <select name='run'  onChange={e => SetExercise(e.target.value)}>
@@ -50,6 +52,7 @@ function Goals () {
         <div id = 'sscuess'
         
         >
+        </div>
         </div>
         </>
     );

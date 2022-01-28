@@ -23,12 +23,9 @@ const link = () =>{
   <button class="btn btn-outline-success" onClick={Login}> <Link to = "/login" className="NavText" > <input value="Log In"type = 'submit'/>  </Link> </button>
   <button class="btn btn-outline-warning" onClick={Register}> <Link to = "/Register" className="NavText"> <input value="Make a New Account Here!"type = 'submit'/>  </Link> </button>
   </div>
-  
+<img class="rounded mx-auto d-block"src='https://cdn.discordapp.com/attachments/933464332874956800/936269264359395358/Untitled_drawing.png'/>
 
 
-  <h1> Healthy Friend ™ </h1>
-  <Link to = "/login" className="NavText"> <input value="twa"type = 'submit'/>  </Link> 
-  
 
 
 

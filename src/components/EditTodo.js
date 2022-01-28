@@ -32,7 +32,7 @@ const EditTodo = ({todo}) => {
 
       
       <div class="modal-header">
-        <h4 class="modal-title"> Edit Todo</h4>
+        <h4 class="modal-title"> Edit </h4>
         <button type="button" class="close" data-dismiss="modal" onClick={() =>{
             setDescription(todo.description)
         }}>&times;</button>

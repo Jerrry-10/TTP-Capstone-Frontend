@@ -18,7 +18,7 @@ function Userprofile () {
     }
 
     const current = new Date();
-    const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+    const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
 
 
 
@@ -45,7 +45,7 @@ function Userprofile () {
   
    <li class="nav-item">
 
-    <a class="nav-link disabled">Current date is {date}</a>
+   <p className='white'> Current date is {date}</p>
   </li> 
 
 </ul>

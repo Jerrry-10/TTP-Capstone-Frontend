@@ -15,6 +15,8 @@ export default function Fitness () {
   useEffect(() => {
     getFitdata()
   }, []);
+  const current = new Date();
+  const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
     return (
         <div>
         <div class="card text-center">
@@ -34,7 +36,7 @@ export default function Fitness () {
         <a class="nav-link" href="/nutrition">Nutritional Goals</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled">Will display time and date</a>
+        <p className='white'> Current date is {date}</p>
       </li>
     </ul>
       </div>
@@ -47,9 +49,9 @@ export default function Fitness () {
     { Fitnessd.map(e=>{
      return(
        <div class="card">
-  <img src="..." class="card-img-top" alt="..."/>
+  <img src="https://cdn.discordapp.com/attachments/933464332874956800/936250259053613066/asleep_sleep_dream_bedtime_sleeping-128.png" class="card-img-top imgheigh" alt="..."/>
   <div class="card-body">
-    <h5 class="card-title">I want to sleep for</h5>
+    <h5 class="card-title">I want to sleep for:</h5>
     <p class="card-text">{e.fitness}</p>
 
   </div>

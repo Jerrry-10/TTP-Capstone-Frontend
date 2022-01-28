@@ -17,9 +17,9 @@ const InputTodo = () =>{
         }
     }
     return <Fragment>
-        <h1 className="test-center mt-5"> Todo list</h1>
+        <h1 className="text-center mt-5"> Your info is displayed below </h1>
         <form className="d-flex mt-5" onSubmit={onSubmitFrom}>
-            <input type="text" className="form-control" value={description} onChange={e => setDescription(e.target.value)}/>
+            <input type="text" placeholder='Put any addtional information...'className="form-control" value={description} onChange={e => setDescription(e.target.value)}/>
             <button className="btn btn-success">Add</button>
         </form>
     </Fragment>
