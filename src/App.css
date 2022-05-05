@@ -11,9 +11,10 @@
   align-items: center;
   justify-content: center;
   background-color: #333;
+ ;
 }
 .goal{
-  background-color: rgb(28, 169, 224);
+  
 }
 .colum{
   display: flex;
@@ -30,8 +31,8 @@
   width: 35px;
 }
 .imgheighcovid{
-  height: 400px;
-  width: 850px;
+  height: 200px;
+  width: auto;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -57,16 +58,17 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color:black;
 }
 
 .NavText {
   float: left;
+  font-weight: bold;
 }
 
 
 .card-header {
-  background: #792626;
+  background:rgb(4, 131, 131);
 }
 
 
@@ -89,7 +91,7 @@ li a {
 }
 
 .App-link {
-  color: #61dafb;
+  color: #00ba28;
 }
 
 @keyframes App-logo-spin {
